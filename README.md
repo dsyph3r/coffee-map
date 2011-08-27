@@ -11,5 +11,6 @@ CoffeeScript class wrappers for Google Maps
 Compile the CoffeeScript files into JavaScript first
 
 ```bash
-    $ coffee --watch -o examples/js -c coffee
+    $ coffee -o examples/js -c coffee
+    $ coffee -o examples/js -c examples/coffee
 ```
