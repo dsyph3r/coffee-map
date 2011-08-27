@@ -28,6 +28,10 @@ class Map
     addLine: (locations) ->
         line = new Line(@map, locations)
         
+    addCircle: (location, radius) ->
+        circle = new Circle(@map, location, radius)
+        return circle
+        
 window.Map = Map
 
 
