@@ -36,6 +36,7 @@ class App
     showCardiff: =>
         @map.setCurrentLocation(@locations.cardiff);
         marker = @map.addMarker(@locations.cardiff);
+        marker.setImage('/images/wales.png', 16, 11)
         marker.setContent("Cardiff");
         marker.show();
     
