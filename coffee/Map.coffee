@@ -25,6 +25,9 @@ class Map
         @markers.push(marker)
         return marker
         
+    addLine: (locations) ->
+        line = new Line(@map, locations)
+        
 window.Map = Map
 
 

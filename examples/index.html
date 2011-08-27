@@ -37,6 +37,13 @@
             var marker = map.addMarker(locations.sydney);
             marker.show();
             
+            map.addLine([locations.cardiff,
+                         locations.paris,
+                         locations.lyon,
+                         locations.barcelona,
+                         locations.cairo,
+                         locations.delhi]);
+            
             window.setTimeout(function() {
                 map.setCurrentLocation(locations.cardiff);
                 var marker = map.addMarker(locations.cardiff);
