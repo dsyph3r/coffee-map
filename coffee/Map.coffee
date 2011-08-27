@@ -1,14 +1,31 @@
 
 class Map
-    constructor: (@canvasId) ->
+    constructor: (@canvasId, location) ->
     
+        @currentLocation = location
+
         mapOptions =
             zoom:       3
-            center:     new google.maps.LatLng(-34.397, 150.644)
+            center:     @currentLocation.getGoogleLatLng()
             mapTypeId:  google.maps.MapTypeId.ROADMAP
             
-        map: new google.maps.Map(document.getElementById(@canvasId), mapOptions)
-
+        @map = new google.maps.Map(document.getElementById(@canvasId), mapOptions)
+        
+        @markers = []
+        
+        
+    setCurrentLocation: (location) ->
+        @currentLocation = location;
+        @map.setCenter(@currentLocation.getGoogleLatLng())
+    
+    getCurrentLocation: () ->
+        @currentLocation
+        
+    addMarker: (location) ->
+        marker = new Marker(@map, location)
+        @markers.push(marker)
+        return marker
+        
 window.Map = Map
 
 
