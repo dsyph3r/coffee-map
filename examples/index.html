@@ -51,6 +51,7 @@
             window.setTimeout(function() {
                 map.setCurrentLocation(locations.cardiff);
                 var marker = map.addMarker(locations.cardiff);
+                marker.setContent("Cardiff");
                 marker.show();
             }, 2000);
         }

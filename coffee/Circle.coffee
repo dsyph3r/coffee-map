@@ -12,7 +12,7 @@ class Circle
             center:         @center.getGoogleLatLng()
             radius:         @radius
             
-    show: () ->
+    show: ->
         circle = new google.maps.Circle(@circleOpts);
     
 window.Circle = Circle

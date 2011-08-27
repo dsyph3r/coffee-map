@@ -4,16 +4,16 @@ class Location
         
     setLatLng: (@lat, @lng) ->
     
-    getLatLng: () ->
+    getLatLng: ->
         { @lat, @lng }
     
-    getLat: () ->
+    getLat: ->
         @lat
         
-    getLng: () ->
+    getLng: ->
         @lng
         
-    getGoogleLatLng: () ->
+    getGoogleLatLng: ->
         new google.maps.LatLng(@lat, @lng)
         
 window.Location = Location
