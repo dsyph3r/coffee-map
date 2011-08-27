@@ -13,7 +13,6 @@ class Map
         
         @markers = []
         
-        
     setCurrentLocation: (location) ->
         @currentLocation = location;
         @map.setCenter(@currentLocation.getGoogleLatLng())
