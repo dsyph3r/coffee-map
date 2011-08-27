@@ -6,6 +6,10 @@ Under construction
 
 CoffeeScript class wrappers for Google Maps
 
+## Demo
+
+A demo of the library can be viewed at http://dsyph3r.github.com/coffee-map/
+
 ## Examples
 
 Compile the CoffeeScript files into JavaScript first
